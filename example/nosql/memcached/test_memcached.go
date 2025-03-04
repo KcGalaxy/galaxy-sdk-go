@@ -10,9 +10,11 @@ import (
 var m *memcached.Memcached
 
 func init() {
+	domain := "example.com"
 	m = memcached.SdkNew(ksc.NewClient(nosql.AK, nosql.SK), &ksc.Config{Region: &nosql.Region}, &utils.UrlInfo{
 		UseSSL: false,
 		Locate: false,
+		Domain: domain,
 	})
 }
 

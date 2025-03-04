@@ -12,14 +12,17 @@ var v1 *kcsv1.Kcsv1
 var v2 *kcsv2.Kcsv2
 
 func init() {
+	domain := "example.com"
 	v1 = kcsv1.SdkNew(ksc.NewClient(nosql.AK, nosql.SK), &ksc.Config{Region: &nosql.Region}, &utils.UrlInfo{
 		UseSSL: false,
 		Locate: false,
+		Domain: domain,
 	})
 
 	v2 = kcsv2.SdkNew(ksc.NewClient(nosql.AK, nosql.SK), &ksc.Config{Region: &nosql.Region}, &utils.UrlInfo{
 		UseSSL: false,
 		Locate: false,
+		Domain: domain,
 	})
 }
 
