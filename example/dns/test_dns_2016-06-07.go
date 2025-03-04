@@ -12,8 +12,10 @@ func main() {
 	ak := "你的AK"
 	sk := "你的SK"
 	region := "cn-beijing-6"
+	domain := "example.com"
 	svc := dns.SdkNew(ksc.NewClient(ak, sk), &ksc.Config{Region: &region}, &utils.UrlInfo{
 		UseSSL: true,
+		Domain: domain,
 	})
 
 	var resp *map[string]interface{}

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"encoding/json"
-	"fmt"
+	//"encoding/json"
+	//"fmt"
 
 	"github.com/gexue/galaxy-sdk-go-test/ksc"
 	"github.com/gexue/galaxy-sdk-go-test/ksc/utils"
@@ -13,9 +13,11 @@ func main() {
 	ak := "你的ak"
 	sk := "你的sk"
 	region := "cn-beijing-6"
+	domain := "example.com"
 	//debug模式的话 打开这个开关
 	svc := kec.SdkNew(ksc.NewClient(ak, sk /*,true*/), &ksc.Config{Region: &region}, &utils.UrlInfo{
 		UseSSL: true,
+		Domain: domain,
 	})
 	var resp *map[string]interface{}
 	var err error

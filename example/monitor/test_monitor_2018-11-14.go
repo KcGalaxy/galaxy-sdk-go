@@ -12,9 +12,11 @@ func main() {
 	ak := "你的 AK"
 	sk := "你的 SK"
 	region := "cn-shanghai-2"
+	domain := "example.com"
 	//debug模式的话 打开这个开关
 	svc := monitorv2.SdkNew(ksc.NewClient(ak, sk /*true*/), &ksc.Config{Region: &region}, &utils.UrlInfo{
 		UseSSL: true,
+		Domain: domain,
 	})
 
 	/*

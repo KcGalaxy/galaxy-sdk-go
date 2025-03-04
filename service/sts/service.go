@@ -75,6 +75,7 @@ func SdkNew(p client.ConfigProvider, cfgs *ksc.Config, info ...*utils.UrlInfo) *
 		UseSSL:      false,
 		Locate:      false,
 		UseInternal: false,
+		Domain:      "example.com",
 	}
 	if len(info) > 0 && len(info) == 1 {
 		if info[0].UseSSL {
@@ -85,6 +86,9 @@ func SdkNew(p client.ConfigProvider, cfgs *ksc.Config, info ...*utils.UrlInfo) *
 		}
 		if info[0].UseInternal {
 			_info.UseInternal = info[0].UseInternal
+		}
+		if info[0].Domain != "" {
+			_info.Domain = info[0].Domain
 		}
 
 	}

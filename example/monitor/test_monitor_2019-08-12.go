@@ -7,14 +7,17 @@ import (
 	"github.com/gexue/galaxy-sdk-go-test/ksc/utils"
 	"github.com/gexue/galaxy-sdk-go-test/service/monitorv3"
 )
+
 //只适用于docker产品线
 func main() {
 	ak := "ak"
 	sk := "sk"
 	region := "cn-beijing-6"
+	domain := "example.com"
 	//debug模式的话 打开这个开关
 	svc := monitorv3.SdkNew(ksc.NewClient(ak, sk /*true*/), &ksc.Config{Region: &region}, &utils.UrlInfo{
 		UseSSL: true,
+		Domain: domain,
 	})
 
 	//	****************************************获取监控数据(GetMetricStatistics())***************************************************

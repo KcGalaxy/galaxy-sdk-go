@@ -12,10 +12,12 @@ func main() {
 	ak := "你的ak"
 	sk := "你的sk"
 	region := "cn-shanghai-2"
+	domain := "example.com"
 	//debug模式的话 打开这个开关
 	svc := eip.SdkNew(ksc.NewClient(ak, sk /*,true*/), &ksc.Config{Region: &region}, &utils.UrlInfo{
 		UseSSL:      true,
 		UseInternal: true,
+		Domain:      domain,
 	})
 	var resp *map[string]interface{}
 	var err error

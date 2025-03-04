@@ -12,10 +12,12 @@ func main() {
 	ak := "你的ak"
 	sk := "你的sk"
 	region := "cn-shanghai-3"
+	domain := "example.com"
 
 	//debug模式的话 打开这个开关
-	svc := ksms.SdkNew(ksc.NewClient(ak, sk ,false), &ksc.Config{Region: &region}, &utils.UrlInfo{
+	svc := ksms.SdkNew(ksc.NewClient(ak, sk, false), &ksc.Config{Region: &region}, &utils.UrlInfo{
 		UseSSL: false,
+		Domain: domain,
 	})
 
 	var resp *map[string]interface{}
@@ -39,19 +41,19 @@ func main() {
 
 	//	****************************************发送多条短信（BatchSendSms）***************************************************
 	/*
-	params := make(map[string]interface{})
-	params["Mobile"] = "130xxxx,153xxxxx"
-	params["SignName"] = "xxxxx"
-	params["TplId"] = "7"
-	params["TplParams"] = "{\"param1\":\"test\"}"
+		params := make(map[string]interface{})
+		params["Mobile"] = "130xxxx,153xxxxx"
+		params["SignName"] = "xxxxx"
+		params["TplId"] = "7"
+		params["TplParams"] = "{\"param1\":\"test\"}"
 
-	resp, err = svc.BatchSendSms(&params)
-	if err != nil {
-		fmt.Println("error:", err.Error())
-	}
-	if resp != nil {
-		str, _ := json.Marshal(&resp)
-		fmt.Printf("%+v\n", string(str))
-	}
+		resp, err = svc.BatchSendSms(&params)
+		if err != nil {
+			fmt.Println("error:", err.Error())
+		}
+		if resp != nil {
+			str, _ := json.Marshal(&resp)
+			fmt.Printf("%+v\n", string(str))
+		}
 	*/
 }

@@ -12,10 +12,12 @@ func main() {
 	ak := "你的ak"
 	sk := "你的sk"
 	region := "cn-beijing-3"
+	domain := "example.com"
 
 	//debug模式的话 打开这个开关
-	svc := iam.SdkNew(ksc.NewClient(ak, sk ,false), &ksc.Config{Region: &region}, &utils.UrlInfo{
+	svc := iam.SdkNew(ksc.NewClient(ak, sk, false), &ksc.Config{Region: &region}, &utils.UrlInfo{
 		UseSSL: true,
+		Domain: domain,
 	})
 
 	var resp *map[string]interface{}
@@ -33,17 +35,17 @@ func main() {
 
 	//	****************************************查询用户基本信息（GetUser）***************************************************
 	/*
-	params := make(map[string]interface{})
-	params["UserName"] = "one"
+		params := make(map[string]interface{})
+		params["UserName"] = "one"
 
-	resp, err = svc.GetUser(&params)
-	if err != nil {
-		fmt.Println("error:", err.Error())
-	}
-	if resp != nil {
-		str, _ := json.Marshal(&resp)
-		fmt.Printf("%+v\n", string(str))
-	}
+		resp, err = svc.GetUser(&params)
+		if err != nil {
+			fmt.Println("error:", err.Error())
+		}
+		if resp != nil {
+			str, _ := json.Marshal(&resp)
+			fmt.Printf("%+v\n", string(str))
+		}
 	*/
 
 }

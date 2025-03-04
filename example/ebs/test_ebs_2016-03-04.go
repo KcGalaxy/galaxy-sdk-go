@@ -1,25 +1,27 @@
 package main
 
 import (
-	"encoding/json"
-	"fmt"
+	//"encoding/json"
+	//"fmt"
 	"github.com/gexue/galaxy-sdk-go-test/ksc"
 	"github.com/gexue/galaxy-sdk-go-test/ksc/utils"
 	"github.com/gexue/galaxy-sdk-go-test/service/ebs"
 )
 
-func main()  {
-    ak := "你的AK"
+func main() {
+	ak := "你的AK"
 	sk := "你的SK"
 	region := "cn-beijing-6"
+	domain := "example.com"
 	//debug模式的话 打开这个开关
 	svc := ebs.SdkNew(ksc.NewClient(ak, sk /*,true*/), &ksc.Config{Region: &region}, &utils.UrlInfo{
 		UseSSL: false,
+		Domain: domain,
 	})
 	var resp *map[string]interface{}
 	var err error
 
-    //	****************************************查询云盘(DescribeVolumes())***************************************************
+	//	****************************************查询云盘(DescribeVolumes())***************************************************
 	/*describeVolumes := make(map[string]interface{})
 	describeVolumes["VolumeType"] = "SSD3.0"//SSD2.0/SSD3.0/SATA2.0/EHDD
 	describeVolumes["VolumeCategory"] = "data"//data/system

@@ -12,9 +12,11 @@ func main() {
 	ak := "你的ak"
 	sk := "你的sK"
 	region := "cn-shanghai-2"
+	domain := "example.com"
 	//debug模式的话 打开这个开关
 	svc := kcm.SdkNew(ksc.NewClient(ak, sk /*,true*/), &ksc.Config{Region: &region}, &utils.UrlInfo{
 		UseSSL: true,
+		Domain: domain,
 	})
 
 	var resp *map[string]interface{}

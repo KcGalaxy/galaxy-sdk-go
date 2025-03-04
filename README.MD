@@ -20,9 +20,11 @@ UseInternal:true 代表使用金山云内网域名
 	ak := "用户AK"
 	sk := "用户SK"
 	region := "cn-beijing-6"
+    domain := "example.com"
 	svc := vpc.SdkNew(ksc.NewClient(ak, sk), &ksc.Config{Region: &region}, &utils.UrlInfo{
     		UseSSL: true,
     		UseInternal:true,
+            Domain: domain,
     	})
 
 	//创建入参 参考 https://docs.ksyun.com/

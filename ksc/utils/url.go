@@ -2,13 +2,13 @@ package utils
 
 import (
 	"fmt"
-	"os"
 )
 
 type UrlInfo struct {
 	UseSSL      bool
 	Locate      bool
 	UseInternal bool
+	Domain      string
 }
 
 type ServiceInfo struct {
@@ -17,8 +17,6 @@ type ServiceInfo struct {
 }
 
 const (
-	// EnvApiDomain is the environment variable name for the API domain. If set, it will override the default domain.
-	EnvApiDomain   = "KSC_GALAXY_API_DOMAIN"
 	defaultDomain  = "example.com"
 	urlTpl         = "%s://%s.api.%s"
 	internalPrefix = "internal"
@@ -28,10 +26,8 @@ const (
 
 func Url(urlInfo *UrlInfo, info ServiceInfo) string {
 	protocol := Protocol(urlInfo.UseSSL)
-	var reqDomain string
-	if val, ok := os.LookupEnv(EnvApiDomain); ok && val != "" {
-		reqDomain = val
-	} else {
+	reqDomain := urlInfo.Domain
+	if reqDomain == "" {
 		reqDomain = defaultDomain
 	}
 	var reqUrlPrefix string
