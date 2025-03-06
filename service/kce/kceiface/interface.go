@@ -9,7 +9,7 @@
 package kceiface
 
 import (
-	"github.com/gexue/galaxy-sdk-go/service/kce"
+	"github.com/KcGalaxy/galaxy-sdk-go/service/kce"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
 )

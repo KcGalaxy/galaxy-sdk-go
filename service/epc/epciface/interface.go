@@ -9,7 +9,7 @@
 package epciface
 
 import (
-	"github.com/gexue/galaxy-sdk-go/service/epc"
+	"github.com/KcGalaxy/galaxy-sdk-go/service/epc"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
 )

@@ -9,7 +9,7 @@
 package monitoriface
 
 import (
-	"github.com/gexue/galaxy-sdk-go/service/monitor"
+	"github.com/KcGalaxy/galaxy-sdk-go/service/monitor"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
 )

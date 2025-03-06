@@ -2,10 +2,10 @@ package kscjson
 
 import (
 	"encoding/json"
+	"github.com/KcGalaxy/galaxy-sdk-go/ksc/kscbody"
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/aws/request"
 	"github.com/aws/aws-sdk-go/private/protocol/query/queryutil"
-	"github.com/gexue/galaxy-sdk-go/ksc/kscbody"
 	"net/url"
 	"reflect"
 	"strings"

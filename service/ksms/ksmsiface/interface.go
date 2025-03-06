@@ -9,7 +9,7 @@
 package ksmsiface
 
 import (
-	"github.com/gexue/galaxy-sdk-go/service/ksms"
+	"github.com/KcGalaxy/galaxy-sdk-go/service/ksms"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
 )

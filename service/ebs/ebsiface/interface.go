@@ -9,7 +9,7 @@
 package ebsiface
 
 import (
-	"github.com/gexue/galaxy-sdk-go/service/ebs"
+	"github.com/KcGalaxy/galaxy-sdk-go/service/ebs"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
 )

@@ -3,9 +3,9 @@
 package krds
 
 import (
-	"github.com/gexue/galaxy-sdk-go/ksc"
-	"github.com/gexue/galaxy-sdk-go/ksc/kscquery"
-	"github.com/gexue/galaxy-sdk-go/ksc/utils"
+	"github.com/KcGalaxy/galaxy-sdk-go/ksc"
+	"github.com/KcGalaxy/galaxy-sdk-go/ksc/kscquery"
+	"github.com/KcGalaxy/galaxy-sdk-go/ksc/utils"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/client"
 	"github.com/aws/aws-sdk-go/aws/client/metadata"

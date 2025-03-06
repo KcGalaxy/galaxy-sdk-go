@@ -9,7 +9,7 @@
 package monitorv3iface
 
 import (
-	"github.com/gexue/galaxy-sdk-go/service/monitorv3"
+	"github.com/KcGalaxy/galaxy-sdk-go/service/monitorv3"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
 )

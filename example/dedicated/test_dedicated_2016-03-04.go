@@ -4,9 +4,9 @@ import (
 	//"encoding/json"
 	//"fmt"
 
-	"github.com/gexue/galaxy-sdk-go/ksc"
-	"github.com/gexue/galaxy-sdk-go/ksc/utils"
-	"github.com/gexue/galaxy-sdk-go/service/dedicated"
+	"github.com/KcGalaxy/galaxy-sdk-go/ksc"
+	"github.com/KcGalaxy/galaxy-sdk-go/ksc/utils"
+	"github.com/KcGalaxy/galaxy-sdk-go/service/dedicated"
 )
 
 func main() {

@@ -9,7 +9,7 @@
 package krdsiface
 
 import (
-	"github.com/gexue/galaxy-sdk-go/service/krds"
+	"github.com/KcGalaxy/galaxy-sdk-go/service/krds"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
 )

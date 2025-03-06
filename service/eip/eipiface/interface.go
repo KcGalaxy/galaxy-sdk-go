@@ -9,7 +9,7 @@
 package eipiface
 
 import (
-	"github.com/gexue/galaxy-sdk-go/service/eip"
+	"github.com/KcGalaxy/galaxy-sdk-go/service/eip"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
 )

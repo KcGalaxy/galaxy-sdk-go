@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/gexue/galaxy-sdk-go/example/nosql"
-	"github.com/gexue/galaxy-sdk-go/ksc"
-	"github.com/gexue/galaxy-sdk-go/ksc/utils"
-	"github.com/gexue/galaxy-sdk-go/service/kcsv1"
-	"github.com/gexue/galaxy-sdk-go/service/kcsv2"
+	"github.com/KcGalaxy/galaxy-sdk-go/example/nosql"
+	"github.com/KcGalaxy/galaxy-sdk-go/ksc"
+	"github.com/KcGalaxy/galaxy-sdk-go/ksc/utils"
+	"github.com/KcGalaxy/galaxy-sdk-go/service/kcsv1"
+	"github.com/KcGalaxy/galaxy-sdk-go/service/kcsv2"
 )
 
 var v1 *kcsv1.Kcsv1

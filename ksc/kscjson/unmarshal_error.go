@@ -1,8 +1,8 @@
 package kscjson
 
 import (
+	"github.com/KcGalaxy/galaxy-sdk-go/ksc/kscquery"
 	"github.com/aws/aws-sdk-go/aws/request"
-	"github.com/gexue/galaxy-sdk-go/ksc/kscquery"
 )
 
 type xmlErrorResponse struct {

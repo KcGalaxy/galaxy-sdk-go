@@ -9,7 +9,7 @@
 package mongodbiface
 
 import (
-	"github.com/gexue/galaxy-sdk-go/service/mongodb"
+	"github.com/KcGalaxy/galaxy-sdk-go/service/mongodb"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
 )

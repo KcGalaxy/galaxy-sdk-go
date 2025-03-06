@@ -9,7 +9,7 @@
 package dedicatediface
 
 import (
-	"github.com/gexue/galaxy-sdk-go/service/dedicated"
+	"github.com/KcGalaxy/galaxy-sdk-go/service/dedicated"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
 )
