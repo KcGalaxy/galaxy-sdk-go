@@ -1,9 +1,9 @@
-### KSC SDK for Go
+### GALAXY SDK for Go
 ####  概述
 1. 金山云Go语言SDK
 2. Go语言版本1.5+ 推荐是用1.12+ 这样方便使用govendor
 3. service目录下的文件请不要修改，都是由代码生成器自动生成 代码生成器暂时不开源
-4. 如果使用vendor 请确保所有ksc-sdk-go 在GOPATH下面/src/github.com/KscSDK目录下 ($GOPATH/src/github.com/KscSDK)
+4. 如果使用vendor 请确保所有galaxy-sdk-go 在GOPATH下面/src/github.com/KcGalaxy目录下 ($GOPATH/src/github.com/KcGalaxy)
 
 ##### vendor
 使用vendor(Go 1.5+)做依赖的话可以直接使用本sdk工具
@@ -13,7 +13,11 @@
 或者使用 go get github.com/aws/aws-sdk-go
 
 ##### 代码示例
+UseSSL: true 代表使用https
+
 UseInternal:true 代表使用金山云内网域名
+
+domain := "example.com" 需要替换成当前环境域名
 
 代码示例在example目录下
 
