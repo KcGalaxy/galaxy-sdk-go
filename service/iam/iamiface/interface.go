@@ -9,7 +9,7 @@
 package iamiface
 
 import (
-	"github.com/gexue/galaxy-sdk-go-test/service/iam"
+	"github.com/gexue/galaxy-sdk-go/service/iam"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
 )

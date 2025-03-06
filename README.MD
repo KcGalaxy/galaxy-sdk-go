@@ -24,7 +24,7 @@ UseInternal:true 代表使用金山云内网域名
 	svc := vpc.SdkNew(ksc.NewClient(ak, sk), &ksc.Config{Region: &region}, &utils.UrlInfo{
     		UseSSL: true,
     		UseInternal:true,
-            Domain: domain,
+    		Domain: domain,
     	})
 
 	//创建入参 参考 https://docs.ksyun.com/

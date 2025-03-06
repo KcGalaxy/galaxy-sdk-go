@@ -9,7 +9,7 @@
 package sqlserveriface
 
 import (
-	"github.com/gexue/galaxy-sdk-go-test/service/sqlserver"
+	"github.com/gexue/galaxy-sdk-go/service/sqlserver"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
 )

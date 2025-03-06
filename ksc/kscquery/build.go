@@ -1,10 +1,10 @@
 package kscquery
 
 import (
-	"github.com/gexue/galaxy-sdk-go-test/ksc/kscbody"
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/aws/request"
 	"github.com/aws/aws-sdk-go/private/protocol/query/queryutil"
+	"github.com/gexue/galaxy-sdk-go/ksc/kscbody"
 	"net/url"
 	"reflect"
 	"strings"

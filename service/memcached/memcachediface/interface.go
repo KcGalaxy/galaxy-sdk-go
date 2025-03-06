@@ -9,7 +9,7 @@
 package memcachediface
 
 import (
-	"github.com/gexue/galaxy-sdk-go-test/service/memcached"
+	"github.com/gexue/galaxy-sdk-go/service/memcached"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
 )

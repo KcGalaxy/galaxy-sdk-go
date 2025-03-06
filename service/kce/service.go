@@ -3,9 +3,9 @@
 package kce
 
 import (
-	"github.com/gexue/galaxy-sdk-go-test/ksc"
-	"github.com/gexue/galaxy-sdk-go-test/ksc/kscjson"
-	"github.com/gexue/galaxy-sdk-go-test/ksc/utils"
+	"github.com/gexue/galaxy-sdk-go/ksc"
+	"github.com/gexue/galaxy-sdk-go/ksc/kscjson"
+	"github.com/gexue/galaxy-sdk-go/ksc/utils"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/client"
 	"github.com/aws/aws-sdk-go/aws/client/metadata"

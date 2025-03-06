@@ -4,9 +4,9 @@ import (
 	//"encoding/json"
 	//"fmt"
 
-	"github.com/gexue/galaxy-sdk-go-test/ksc"
-	"github.com/gexue/galaxy-sdk-go-test/ksc/utils"
-	"github.com/gexue/galaxy-sdk-go-test/service/kec"
+	"github.com/gexue/galaxy-sdk-go/ksc"
+	"github.com/gexue/galaxy-sdk-go/ksc/utils"
+	"github.com/gexue/galaxy-sdk-go/service/kec"
 )
 
 func main() {

@@ -3,9 +3,9 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/gexue/galaxy-sdk-go-test/ksc"
-	"github.com/gexue/galaxy-sdk-go-test/ksc/utils"
-	"github.com/gexue/galaxy-sdk-go-test/service/monitorv3"
+	"github.com/gexue/galaxy-sdk-go/ksc"
+	"github.com/gexue/galaxy-sdk-go/ksc/utils"
+	"github.com/gexue/galaxy-sdk-go/service/monitorv3"
 )
 
 //只适用于docker产品线

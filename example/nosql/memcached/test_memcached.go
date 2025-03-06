@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/gexue/galaxy-sdk-go-test/example/nosql"
-	"github.com/gexue/galaxy-sdk-go-test/ksc"
-	"github.com/gexue/galaxy-sdk-go-test/ksc/utils"
-	"github.com/gexue/galaxy-sdk-go-test/service/memcached"
+	"github.com/gexue/galaxy-sdk-go/example/nosql"
+	"github.com/gexue/galaxy-sdk-go/ksc"
+	"github.com/gexue/galaxy-sdk-go/ksc/utils"
+	"github.com/gexue/galaxy-sdk-go/service/memcached"
 )
 
 var m *memcached.Memcached

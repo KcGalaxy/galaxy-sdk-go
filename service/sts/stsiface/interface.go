@@ -9,7 +9,7 @@
 package stsiface
 
 import (
-	"github.com/gexue/galaxy-sdk-go-test/service/sts"
+	"github.com/gexue/galaxy-sdk-go/service/sts"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
 )

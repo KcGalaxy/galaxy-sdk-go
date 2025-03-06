@@ -9,7 +9,7 @@
 package kcsv1iface
 
 import (
-	"github.com/gexue/galaxy-sdk-go-test/service/kcsv1"
+	"github.com/gexue/galaxy-sdk-go/service/kcsv1"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
 )
